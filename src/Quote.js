@@ -8,11 +8,7 @@ function Quote({ posts, length }) {
     if (post !== undefined) {
       const postSplit = /[(,*)(.*)]/;
       const postArr = post.split(postSplit);
-      return postsArr.concat(
-        postArr.filter(
-          post => post !== "" || !post.match(/^(VIBESY)|(^Vibesy)|(^Shane)/)
-        )
-      );
+      return postsArr.concat(postArr.filter(post => post !== ""));
     }
     return postsArr.filter(post => post !== "");
   });
