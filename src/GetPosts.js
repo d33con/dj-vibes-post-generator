@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import RaisedButton from "material-ui/RaisedButton";
 import Slider from "material-ui/Slider";
-import Signoff from "./Signoff";
 import Quote from "./Quote";
 
 import "./App.css";
@@ -60,7 +59,6 @@ class GetPosts extends Component {
       <div>
         <div className="quote-box">
           <Quote posts={this.state.posts} length={this.state.length} />
-          <Signoff posts={this.state.posts} />
         </div>
         <div className="buttons">
           <div className="length-control">
@@ -77,7 +75,7 @@ class GetPosts extends Component {
           </div>
           <div className="new-quote-button">
             <RaisedButton
-              label="Get a new post"
+              label="Get more bollocks"
               labelStyle={styles.button}
               primary={true}
               onClick={this.getPagePosts}
